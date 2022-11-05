@@ -20,7 +20,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-start": "json-server --watch src/api/movies.json -p 3002 ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

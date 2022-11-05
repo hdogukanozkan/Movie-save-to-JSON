@@ -1,0 +1,25 @@
+{
+  "movies": [
+    {
+      "name": "Avatar ",
+      "rating": "7.5",
+      "overview": "Bir hırsızlık olayında ağabeyi ölen yarı felçli Jake Sully, Pandora adındaki uzak bir gezegende görevinin başına geçmeye karar verir. Bu yerde Na’vi adında giderek tükenmekte olan bir halk yaşamaktadır. Askeri bir şirket, söz konusu yeri ve oradaki kaynakları mercek altına almak üzere Avatar adında bir program oluşturmuştur. Bu program insanları kısmen insan kısmen de Na’vi haline büründürerek misyon amaçlı Pandora’ya göndermektedir. Bu sisteme gönüllü dahil olan Botanist Dr. Grace Augustine ve Jake Sully için başka bir yaşam var olacaktır. Sully, Pandora’ya geçtiği anda felçli bedeni değişime uğrayarak işlevsel hale gelir. Bu sırada Na’vi halkından Prenses Neytiri ile karşı karşıya gelen Jake, ansızın bir farkındalık yaşar ve bir araştırma misyonu ile gönderildiği bu gezegeni, kendi dünyalısından korumaya karar verir.",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+      "id": 1
+    },
+    {
+      "name": "Örümcek-Adam: Eve Dönüş Yok",
+      "rating": "8.0",
+      "overview": "Örümcek Adam'ın sinema tarihinde ilk kez, dost canlısı mahalle kahramanımız maskesizdir ve artık normal hayatıyla süper kahraman olmanın yüksek risklerini birbirinden ayıramıyordur. Doktor Strange'den yardım istediğinde, riskler daha da tehlikeli hale gelir ve onu Örümcek Adam olmanın gerçekte ne anlama geldiğini keşfetmeye zorlar.",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/owp86mH42Un19egdeeZPImufBxN.jpg",
+      "id": 2
+    },
+    {
+      "name": "Pinokyo ",
+      "rating": "6.7",
+      "overview": "Pinocchio, gerçek bir çocuk olmak isteyen tahtadan bir kuklanın hikayesini konu ediyor. Gepetto Usta'nın ahşaptan yaptığı Pinokyo’nun en çok istediği şey gerçekleşir ve insan olur. Ancak yalana meyilli olan Pinokyo’nun her yalan söylediğinde burnu uzar. Bu durum Gepetto ile kurduğu baba oğul ilişkisini de etkiler.\n\n",
+      "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tN8HeqzvdoEZtmQaUeLzOdOOyVe.jpg",
+      "id": 3
+    }
+  ]
+}
