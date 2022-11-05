@@ -6,6 +6,9 @@ import EditMovie from "./editMovie";
 import Axios from "axios";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+require("dotenv").config();
+const api_key = process.env.REACT_APP_API_MOVIE;
+
 /* 
 require('dotenv').config()
 const api_key = process.env.REACT_APP_API_KEY
@@ -43,9 +46,7 @@ class app extends React.Component {
 
   // AXİOS ile açılır açılmaz çalışsın diye;
   async componentDidMount() {
-    const response = await Axios.get(
-      `https://fake-api-movies-json.herokuapp.com/movies`
-    );
+    const response = await Axios.get(api_key);
     // alma methodunu çalıştırdık obje olduğu için .data ile verilere ulaştık
 
     this.setState({ diziler: response.data });
@@ -67,9 +68,7 @@ class app extends React.Component {
 
   // AXİOS ile;
   deleteMovie = async (dizi) => {
-    Axios.delete(
-      `https://fake-api-movies-json.herokuapp.com/movies/${dizi.id}`
-    );
+    Axios.delete(`${api_key}/${dizi.id}`);
     // LOCAL'de axios ile seçilen diziyi id'sinden bulup sildik
 
     // Axios.post(`https://api.themoviedb.org/3/list/8218049/remove_item?media_id=${dizi.id}&api_key=${api_key}&session_id=${session_id}`);
@@ -87,19 +86,13 @@ class app extends React.Component {
   };
 
   addMovieFun = async (event) => {
-    await Axios.post(
-      "https://fake-api-movies-json.herokuapp.com/movies",
-      event
-    );
+    await Axios.post(api_key, event);
 
     this.componentDidMount();
   };
 
   editMovie = async (id, updateMovie) => {
-    await Axios.put(
-      `https://fake-api-movies-json.herokuapp.com/movies/${id}`,
-      updateMovie
-    );
+    await Axios.put(`${api_key}/${id}`, updateMovie);
     this.componentDidMount();
   };
 

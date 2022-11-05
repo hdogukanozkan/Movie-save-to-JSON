@@ -1,6 +1,9 @@
 import React from "react";
 import Axios from "axios";
 
+require("dotenv").config();
+const api_key = process.env.REACT_APP_API_MOVIE;
+
 class EditMovie extends React.Component {
   constructor() {
     super();
@@ -14,7 +17,7 @@ class EditMovie extends React.Component {
   }
   async componentDidMount() {
     const id = window.location.pathname.replace("/edit/", "");
-    const response = await Axios.get("http://localhost:3002/movies/" + id);
+    const response = await Axios.get(`${api_key}/${id}`);
 
     this.setState({
       name: response.data.name,
@@ -36,7 +39,7 @@ class EditMovie extends React.Component {
 
     this.props.editMovies(id, updateMovie);
     let url = window.location.origin;
-    console.log(window.location.origin)
+    console.log(window.location.origin);
     window.location.replace(url);
   };
 
@@ -64,7 +67,8 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="name"
                 value={this.state.name}
-                onChange={(event) => this.inputChangedHandler(event)} required
+                onChange={(event) => this.inputChangedHandler(event)}
+                required
               />
             </div>
             <div className="form-group col-md-2">
@@ -74,7 +78,8 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="rating"
                 value={this.state.rating}
-                onChange={(event) => this.inputChangedHandler(event)} required
+                onChange={(event) => this.inputChangedHandler(event)}
+                required
               />
             </div>
           </div>
@@ -86,7 +91,8 @@ class EditMovie extends React.Component {
                 className="form-control"
                 name="imageURL"
                 value={this.state.imageURL}
-                onChange={(event) => this.inputChangedHandler(event)} required
+                onChange={(event) => this.inputChangedHandler(event)}
+                required
               />
             </div>
           </div>
@@ -95,7 +101,8 @@ class EditMovie extends React.Component {
               <label htmlFor="overviewTextarea">Overview</label>
               <textarea
                 className="form-control"
-                name="overview" required
+                name="overview"
+                required
                 rows="5"
                 value={this.state.overview}
                 onChange={(event) => this.inputChangedHandler(event)}
