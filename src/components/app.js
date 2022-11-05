@@ -88,10 +88,9 @@ class app extends React.Component {
     this.componentDidMount();
   };
 
-  editMovie = async (id,updateMovie) => {
+  editMovie = async (id, updateMovie) => {
     await Axios.put(`http://localhost:3002/movies/${id}`, updateMovie);
     this.componentDidMount();
-
   };
 
   render() {
