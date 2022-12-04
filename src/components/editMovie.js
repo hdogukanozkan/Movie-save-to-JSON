@@ -2,7 +2,7 @@ import React from "react";
 import Axios from "axios";
 
 require("dotenv").config();
-const api_key = "https://fake-api-movies-production.up.railway.app/movies";
+const api_key = "https://fake-api-movies-production.up.railway.app/movies/";
 
 class EditMovie extends React.Component {
   constructor() {
