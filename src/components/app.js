@@ -7,7 +7,7 @@ import Axios from "axios";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 require("dotenv").config();
-const api_key = process.env.REACT_APP_API_MOVIE;
+const api_key = "https://fake-api-movies-production.up.railway.app/movies";
 
 /* 
 require('dotenv').config()
