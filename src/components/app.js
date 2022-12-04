@@ -11,7 +11,7 @@ const api_key = process.env.REACT_APP_API_MOVIE;
 
 /* 
 require('dotenv').config()
-const api_key = process.env.REACT_APP_API_KEY
+const api_key = https://fake-api-movies-production.up.railway.app/movies
 const session_id = process.env.REACT_APP_SESSION_ID
 
  */
