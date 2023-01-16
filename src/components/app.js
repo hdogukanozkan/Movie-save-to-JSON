@@ -7,7 +7,8 @@ import Axios from "axios";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 require("dotenv").config();
-const api_key = "https://fake-api-movies-production.up.railway.app/movies";
+const api_key = "http://localhost:3002/movies";
+// https://fake-api-movies-production.up.railway.app/movies
 
 /* 
 require('dotenv').config()
